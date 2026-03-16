@@ -7,8 +7,102 @@
 </head>
 <body>
     <script>
-        let n = 5;
-        console.log(n);
+       //comments : 
+                 
+                //  this is single line comment.
+
+                  
+
+                /* this is multi line
+                 comment */
+
+           
+    // data type
+    let Str = " Hello";
+    let num = 123;
+    let Bool = true;
+    let Undef ;
+    let value = null;
+
+    console.log(Str);
+    console.log(num);
+    console.log(Bool);
+    console.log(Undef);
+    console.log(value);
+
+
+
+    // let = it is use for block of code.
+    // var = global or function-scoped.
+    // const = block-scoped and cannot be reassigned.
+
+    // var
+       var x = 10;
+       if(true){
+        var x = 20;   // change the global variable
+       }
+       console.log(x);  // output 20
+                
+
+       // let
+         let y = 10;
+         if(true){
+            let y = 20;
+
+         }
+         console.log(y); // output 10
+
+
+
+         /* const
+           const z = 100;
+           z = 200;
+           console.log(z);  // error: assignment to constant variable   */
+
+    //Dynamic Typing
+      let data ="Hello";  //string
+      data = 25;   // now a number
+
+      // typeof operator
+       console.log(typeof "hello"); 
+       console.log(typeof 10); 
+       console.log(typeof true); 
+       console.log(typeof null); 
+       console.log(typeof undefined);
+       console.log(typeof (data)); 
+       
+
+
+   // Type of conversion
+       let num1 = 10;
+       console.log(String(num));
+       console.log(num.toString);
+
+       //number conversion
+        console.log(Number("123"));    //123
+        console.log(parseInt("123px"));  //123
+        console.log("12.34px");     //12.34
+        console.log("hello");      //NaN (not a number)
+
+    //BOOLEAN CONVERSION
+        console.log(Boolean("Hello"));   //true
+        console.log(Boolean(0));  //false
+      
+
+
+    //OBJECTS 
+        let person = {
+            name: "Alice",
+            age : 30,
+            isStudent : false
+        };
+
+        console.log(person.name);    // output : Alice
+        console.log("age");   // output 30
+
+
+    
+
     </script>
 </body>
 </html>
